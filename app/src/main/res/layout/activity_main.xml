@@ -14,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="體脂肪計算機"
-        android:textSize="22dp"
+        android:textSize="22sp"
         android:textColor="@android:color/black"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,22 +24,24 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="身高:"
+        android:text="身高 :"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         />
+
     <EditText
-        android:id = "@+id/ed_height"
+        android:id="@+id/ed_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:ems = "10"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:ems="10"
         android:inputType="numberSigned"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView2"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <TextView
         android:id="@+id/textView3"
@@ -49,17 +51,20 @@
         android:text="體重:"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <EditText
-        android:id = "@+id/ed_weight"
+        android:id="@+id/ed_weight"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
-        android:layout_marginStart="8dp"
-        android:ems = "10"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:ems="10"
         android:inputType="numberSigned"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="@+id/textView3"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintVertical_bias="0.785" />
+
     <RadioGroup
         android:id = "@+id/radioGroup"
         android:layout_width="wrap_content"
@@ -85,7 +90,7 @@
     </RadioGroup>
     <Button
         android:id="@+id/btn_calculate"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="計算"
